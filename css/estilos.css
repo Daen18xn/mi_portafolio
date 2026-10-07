@@ -1,0 +1,205 @@
+/* ===================================================
+   ESTILOS GENERALES Y BASE (Móvil / Mobile First)
+   Paleta: Rosa Pastel & Malva Elegante
+   =================================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #fff0f5; /* Fondo rosa suave pastel (LavenderBlush) */
+  color: #2b1b24; /* Texto oscuro cálido para alto contraste y fácil lectura */
+  padding: 10px;
+}
+
+header {
+  background-color: #d8a7b1; /* Rosa pastel elegante / Malva claro */
+  color: #3d1c28; /* Texto oscuro para contraste en el encabezado */
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+  color: #3d1c28;
+}
+
+header p {
+  font-weight: 500;
+}
+
+header nav ul {
+  list-style: none;
+  margin-top: 15px;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin: 0 8px;
+}
+
+header nav ul li a {
+  color: #3d1c28;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+header nav ul li a:focus,
+header nav ul li a:hover {
+  background-color: #c78290;
+  color: #ffffff;
+}
+
+main {
+  margin-top: 20px;
+}
+
+section {
+  background: #ffffff;
+  padding: 18px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  border: 1px solid #f2d6dc; /* Borde rosa pastel sutil */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+}
+
+h2 {
+  color: #b85b70; /* Rosa oscuro con alto contraste para títulos */
+  border-bottom: 2px solid #f2d6dc;
+  padding-bottom: 6px;
+  margin-bottom: 15px;
+}
+
+.tarjeta-trabajo {
+  background-color: #faecef; /* Tarjeta en todo rosa pastel muy claro */
+  padding: 14px;
+  margin-bottom: 14px;
+  border-left: 5px solid #b85b70;
+  border-radius: 6px;
+}
+
+.tarjeta-trabajo h3 {
+  color: #7a283c;
+  margin-bottom: 6px;
+}
+
+form label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+  color: #3d1c28;
+}
+
+form input, 
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #e6b8c2;
+  border-radius: 6px;
+  background-color: #fff9fa;
+  font-family: inherit;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: 2px solid #b85b70;
+  background-color: #ffffff;
+}
+
+form button {
+  margin-top: 18px;
+  background-color: #b85b70; /* Botón rosa cálido principal */
+  color: #ffffff;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+
+form button:hover,
+form button:focus {
+  background-color: #9c4155;
+}
+
+footer {
+  text-align: center;
+  padding: 18px;
+  background-color: #d8a7b1;
+  color: #3d1c28;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+footer a {
+  color: #591928;
+  font-weight: bold;
+}
+
+/* ===================================================
+   PUNTO DE QUIEBRE 2: TABLET (601px a 1024px)
+   =================================================== */
+@media (min-width: 601px) and (max-width: 1024px) {
+  body {
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  form button {
+    width: auto;
+  }
+}
+
+/* ===================================================
+   PUNTO DE QUIEBRE 3: ESCRITORIO (1025px en adelante)
+   =================================================== */
+@media (min-width: 1025px) {
+  body {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  header nav ul {
+    margin-top: 0;
+  }
+
+  /* Organizar tarjetas de trabajos en columnas */
+  #trabajos {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  #trabajos h2 {
+    width: 100%;
+  }
+
+  .tarjeta-trabajo {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 0;
+  }
+}

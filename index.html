@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio Web - Génesis Flores</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <!-- Encabezado y Navegación principal -->
+  <header>
+    <h1>Génesis Daniela Flores Galleguillos</h1>
+    <p>Estudiante de Ingeniería Civil en Informática - UC Temuco</p>
+    <nav>
+      <ul>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#trabajos">Mis Trabajos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+
+    <!-- Sección 1: Presentación Personal -->
+    <section id="sobre-mi">
+      <h2>Sobre Mí</h2>
+      <p>
+        ¡Hola! Soy Génesis Flores, estudiante de primer año de Ingeniería Civil en Informática. 
+        Este portafolio reúne los trabajos y ejercicios prácticos realizados durante el primer semestre en la asignatura de Desarrollo de Frontend para mi profesor evaluador.
+      </p>
+    </section>
+
+    <!-- Sección 2: Trabajos del Semestre -->
+    <section id="trabajos">
+      <h2>Mis Trabajos del Semestre</h2>
+
+      <article class="tarjeta-trabajo">
+        <h3>Ejercicio Guiado (Sesión 5): Flexbox y Grid</h3>
+        <p>
+          Construcción de una página web desde cero aplicando estructura HTML5, diseño maquetado con <strong>Flexbox</strong> para centrar 3 tarjetas y <strong>CSS Grid</strong> para crear una grilla de 3×3 celdas responsivas.
+        </p>
+      </article>
+
+      <article class="tarjeta-trabajo">
+        <h3>Proyecto Evaluado (P2): Portafolio Web Personal</h3>
+        <p>
+          Desarrollo de una interfaz semántica y adaptativa con 3 puntos de quiebre (móvil, tablet y escritorio), jerarquía visual clara y estándares de accesibilidad WCAG.
+        </p>
+      </article>
+    </section>
+
+    <!-- Sección 3: Contacto (Requerido por la pauta) -->
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form action="#" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+        <button type="submit">Enviar Mensaje</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>Contacto institucional: <a href="mailto:gflores2026@alu.uct.cl">gflores2026@alu.uct.cl</a></p>
+    <p>GitHub: <a href="https://github.com/Daen18xn" target="_blank" rel="noopener">@Daen18xn</a></p>
+  </footer>
+
+</body>
+</html>
